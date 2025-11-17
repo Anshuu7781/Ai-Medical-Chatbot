@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HealthBot - Your Healthcare Assistant</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="chat-container">
+        <!-- Header Section -->
+        <div class="chat-header">
+            <div class="bot-avatar">🏥</div>
+            <div class="header-text">
+                <h1>HealthBot</h1>
+                <p>Your 24/7 Healthcare Information Assistant</p>
+            </div>
+        </div>
+
+        <!-- Chat Messages Area -->
+        <div class="chat-messages" id="chatMessages">
+            <div class="message bot">
+                <div class="message-content">
+                    <div>Hello! I'm HealthBot, your healthcare information assistant. 👋</div>
+                    <div style="margin-top: 10px;">I can help you with:</div>
+                    <div style="margin-top: 5px;">• Common symptoms and conditions</div>
+                    <div>• First aid guidance</div>
+                    <div>• General health tips</div>
+                    <div>• Medicine information</div>
+                    <div style="margin-top: 10px; font-style: italic; font-size: 13px;">⚠️ Note: I provide general information only. For medical emergencies or serious conditions, please consult a healthcare professional.</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Quick Action Buttons -->
+        <div class="quick-options">
+            <button class="quick-btn" onclick="sendQuickMessage('What are symptoms of fever?')">💊 Fever Symptoms</button>
+            <button class="quick-btn" onclick="sendQuickMessage('First aid for burns')">🩹 First Aid</button>
+            <button class="quick-btn" onclick="sendQuickMessage('How to prevent diabetes?')">❤️ Health Tips</button>
+            <button class="quick-btn" onclick="sendQuickMessage('Tell me about headaches')">🤕 Common Issues</button>
+        </div>
+
+        <!-- Input Area -->
+        <div class="chat-input-area">
+            <input type="text" class="chat-input" id="userInput" placeholder="Type your health question here..." onkeypress="handleKeyPress(event)">
+            <button class="send-btn" onclick="sendMessage()">Send</button>
+        </div>
+    </div>
+
+    <!-- Link JavaScript File -->
+    <script src="js/script.js"></script>
+</body>
+</html>
